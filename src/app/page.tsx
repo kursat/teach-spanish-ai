@@ -1,16 +1,14 @@
-import Image from "next/image";
+"use client";
+
+import Chat from "@/components/chat/Chat";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-evenly p-24">
-      <div className="min-w-full h-60 bg-blue-50 rounded overflow-y-auto">
-        <div>Hello!</div>
-        <div>Hello you too!</div>
+    <main className="flex min-h-screen">
+      <div className="flex-1 bg-blue-100">Content</div>
+      <div className="w-90">
+        <Chat />
       </div>
-      <input className="w-1/3 h-24 bg-blue-100 rounded" />
-      <button className="bg-green-300 p-5 rounded hover:bg-green-500 text-white font-bold">
-        Send
-      </button>
     </main>
   );
 }
